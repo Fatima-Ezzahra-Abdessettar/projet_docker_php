@@ -14,7 +14,7 @@ services:
       - backend
 
   php:
-    image: php:8.2-apache
+    build: .
     container_name: php_app
     volumes:
       - ./app:/var/www/html
